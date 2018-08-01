@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  #wallpaper.wallpaper(data-image='images/austria.jpg')
+  .content
+    aside.side
+      figure#picture.picture
+        .picture-shadow
+        img#pictureImage.picture-image(src='images/holden.jpg', alt="Ruben's Portrait", width='320', height='320')
+    main.about
+      h1.name
+        | Hi I'm Rubens
+      p.job
+        | Software Engineer
+      hr.hr
+      .description
+        p
+          | I spend my days hacking[programming] around a computer and trying to figure out how things work 
+          i#smile.fas.fa-smile
+      .contact
+        a.button(href='mailto:rssanjuan2704@gmail.com')
+          | Get in touch
+      ul.social
+        li
+          a(href='https://twitter.com/sigfriedCub1990')
+            i.fab.fa-twitter
+        li
+          a(href='https://github.com/sigfriedCub1990')
+            i.fab.fa-github
+        li
+          a(href='https://www.linkedin.com/in/rub%C3%A9n-salvador-garc%C3%ADa-san-juan-ab6735b5/')
+            i.fab.fa-linkedin
+  script(src='/js/main.js')
