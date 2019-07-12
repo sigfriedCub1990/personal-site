@@ -159,3 +159,12 @@
 .social li:nth-child(3) {
     animation-delay: 1s;
 }
+
+.social li:nth-child(4) {
+    animation-delay: 1.100s;
+}
+
+
+.social li:nth-child(5) {
+    animation-delay: 1.200s;
+}

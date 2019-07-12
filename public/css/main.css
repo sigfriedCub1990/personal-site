@@ -209,7 +209,6 @@ a {
         margin-bottom: 3rem;
         width: 100%;
     }
-    
 }
 
 @media screen and (min-width: 800px) {
@@ -233,6 +232,5 @@ a {
         flex-grow: 1;
         flex-shrink: 1;
     }
-    
 }
 
