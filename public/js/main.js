@@ -1,6 +1,6 @@
-function loadImage(id, targetId) {
+function loadImage(id, selector) {
     var el = document.getElementById(id);
-    var targetEl = targetId ? document.getElementById(targetId): el;
+    var targetEl = selector ? document.querySelector(selector): el;
     var imageToLoad;
 
     if (el.dataset.image) {
@@ -22,5 +22,5 @@ function loadImage(id, targetId) {
 
 document.addEventListener('DOMContentLoaded', function() {
     loadImage('wallpaper');
-    loadImage('pictureImage', 'picture');
+    loadImage('pictureImage', '.picture');
 });
