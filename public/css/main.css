@@ -12,7 +12,7 @@ html {
     min-height: 100vh;
     min-width: 300px;
     overflow-x: hidden;
-    text-shadow: 0 3px 5px rgba(0, 0, 0, 0,1);
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 a {
@@ -136,7 +136,7 @@ a {
 }
 
 .wallpaper {
-    background-image: url('../images/austria.jpg');
+    background-image: url('../images/austria.webp');
     background-position: center;
     background-size: cover;
     opacity: 0.2;
@@ -177,7 +177,7 @@ a {
 
 .picture-image {
     border-radius: 270490px;
-    position: absolute;
+    object-fit: cover;
 }
 
 .picture-shadow,
@@ -207,7 +207,6 @@ a {
 
     .side {
         margin-bottom: 3rem;
-        width: 100%;
     }
 }
 
@@ -233,4 +232,3 @@ a {
         flex-shrink: 1;
     }
 }
-
