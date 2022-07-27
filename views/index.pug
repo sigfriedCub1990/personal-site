@@ -1,12 +1,12 @@
 extends layout
 
 block content
-  #wallpaper.wallpaper(data-image='images/austria.jpg')
+  #wallpaper.wallpaper(data-image='images/austria.webp')
   .content
     aside.side
-      figure#picture.picture
-        .picture-shadow
-        img#pictureImage.picture-image(src='images/holden.jpg', alt="Ruben's Portrait", width='320', height='320')
+      picture.picture
+        source(type='image/webp' srcset='images/avatar.webp 800w, images/avatar-2x.webp 2x' sizes="(min-width: 800px) 160px, 80vw")
+        img#pictureImage.picture-image(src='images/avatar.jpg' alt="Ruben's Portrait" width='320' height='320')
     main.about
       h1.name
         | Hi I'm Rubens
