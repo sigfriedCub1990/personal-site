@@ -1,6 +1,6 @@
 {
-  "name": "css-44",
-  "version": "0.0.0",
+  "name": "Ruben_personal_site",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "export NODE_ENV=production; node ./bin/www",
