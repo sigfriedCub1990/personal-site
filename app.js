@@ -14,7 +14,10 @@ const app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
-app.use(logger('dev'));
+if (process.env.NODE_ENV === 'development') {
+    app.use(logger('dev'));
+}
+
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
