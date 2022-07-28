@@ -1,5 +1,8 @@
 extends layout
 
+mixin scriptMixin(href, nonce)
+  script(nonce=nonce src=href)
+
 block content
   #wallpaper.wallpaper(data-image='images/austria.webp')
   .content
@@ -33,6 +36,6 @@ block content
         li
           a(href='https://codepen.io/sigfriedCub' aria-label='codepen')
             i.fab.fa-codepen
-  script(src='/js/main.js')
+  +scriptMixin('/js/main.js', `${nonce}`)
   <!-- Scripts fontawesome -->
-  <script src="https://kit.fontawesome.com/f10193348a.js"></script>
+  +scriptMixin('https://kit.fontawesome.com/f10193348a.js', `${nonce}`)
