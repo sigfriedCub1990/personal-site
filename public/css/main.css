@@ -192,10 +192,6 @@ a {
     margin-bottom: 0.5rem;
 }
 
-#smile {
-    color: #f9c804;
-}
-
 /* 4. Responsivness */
 @media screen and (max-width: 799px) {
     .content {
