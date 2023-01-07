@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "export NODE_ENV=production; node ./bin/www",
-    "dev": "export NODE_ENV=development; export DEBUG=rubens:server; node ./bin/www"
+    "start": "node ./bin/www",
+    "dev": "nodemon --inspect=0.0.0.0:9229 ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
@@ -15,5 +15,8 @@
     "http-errors": "~2.0.0",
     "morgan": "~1.10.0",
     "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }
