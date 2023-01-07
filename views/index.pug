@@ -1,7 +1,10 @@
 extends layout
 
-mixin scriptMixin(href, nonce)
-  script(nonce=nonce src=href)
+mixin scriptMixin(src, nonce, isAsync=false)
+  if isAsync
+    script(nonce=nonce src=src async)
+  else
+    script(nonce=nonce src=src)
 
 block content
   #wallpaper.wallpaper(data-image='images/austria.webp')
@@ -38,4 +41,4 @@ block content
             i.fab.fa-codepen
   +scriptMixin('/js/main.js', `${nonce}`)
   <!-- Scripts fontawesome -->
-  +scriptMixin('https://kit.fontawesome.com/f10193348a.js', `${nonce}`)
+  +scriptMixin('https://kit.fontawesome.com/f10193348a.js', `${nonce}`, true)
