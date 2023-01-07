@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  site:
+    build:
+      context: .
+    ports:
+      - 3000:3000
+      - 9229:9229
+    environment:
+      - NODE_ENV=development
+      - DEBUG=rubens:server
+    volumes:
+      - ./:/app
+    command: npm run dev
