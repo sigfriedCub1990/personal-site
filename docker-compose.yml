@@ -2,6 +2,7 @@ version: '3.8'
 
 services:
   site:
+    restart: always
     build:
       context: .
     ports:
